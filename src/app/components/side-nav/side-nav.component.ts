@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { navbarData } from './nav-data';
 
 @Component({
   selector: 'app-side-nav',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class SideNavComponent {
 
+  collapsed = false;
+  navData = navbarData;
 }
