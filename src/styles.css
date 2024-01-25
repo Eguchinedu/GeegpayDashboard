@@ -6,5 +6,6 @@
   box-sizing: border-box;
 }
 body {
+  position: relative;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
