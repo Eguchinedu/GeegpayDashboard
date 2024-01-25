@@ -8,19 +8,62 @@
       <i class="bi bi-x-lg"></i>
     </button>
   </div>
-  <ul class="sidenav-nav">
-    <li class="sidenav-nav-item" *ngFor="let data of navData">
-      <a
-        class="sidenav-nav-link"
-        routerLinkActive="active"
-        [routerLinkActiveOptions]="{ exact: true }"
-        [routerLink]="[data.routeLink]"
-      >
-        <i class="sidenav-link-icon" [class]="data.icon"></i>
-        <span class="sidenav-link-text" *ngIf="collapsed">{{
-          data.label
-        }}</span>
-      </a>
-    </li>
-  </ul>
+  <div class="sidenav-content">
+    
+      <ul class="sidenav-nav">
+        <li class="sidenav-nav-item" *ngFor="let data of navData">
+          <a
+            class="sidenav-nav-link"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            [routerLink]="[data.routeLink]"
+          >
+            <i class="sidenav-link-icon" [class]="data.icon2"></i>
+            <span class="sidenav-link-text" *ngIf="collapsed">{{
+              data.label
+            }}</span>
+          </a>
+        </li>
+    
+        
+      </ul>
+    
+      <ul class="sidenav-nav">
+        <li class="sidenav-nav-item" >
+          <a
+            class="sidenav-nav-link"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            
+          >
+            <i class="sidenav-link-icon" [class]="'bi bi-arrow-right-circle'" ></i>
+            <span class="sidenav-link-text" *ngIf="collapsed">Logout</span>
+          </a>
+        </li>
+        <li class="sidenav-nav-item" >
+          <a
+            class="sidenav-nav-link"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            
+          >
+            <i class="sidenav-link-icon" [class]="'bi bi-gear'" ></i>
+            <span class="sidenav-link-text" *ngIf="collapsed">Settings</span>
+          </a>
+        </li>
+        <li class="sidenav-nav-item" >
+          <a
+            class="sidenav-nav-link"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            
+          >
+            <i class="sidenav-link-icon" [class]="'bi bi-arrow-left-circle'" ></i>
+            <span class="sidenav-link-text" *ngIf="collapsed">Exit</span>
+          </a>
+        </li>
+    
+        
+      </ul>
+  </div>
 </div>
