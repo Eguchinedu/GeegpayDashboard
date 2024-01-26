@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'orders', component: OrdersComponent, title: 'Geegpay - Orders' },
   { path: 'users', component: UsersComponent, title: 'Geegpay - Users' },
   { path: 'analytics', component: AnalyticsComponent, title: 'Geegpay - Analytics' },
-  { path: 'dashboard', component: DashboardComponent, title: 'Geegpay - dashboard' },
+  { path: 'dashboard', component: DashboardComponent, title: 'Geegpay - Dashboard' },
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
