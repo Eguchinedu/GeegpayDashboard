@@ -1,0 +1,58 @@
+table {
+  width: 100%;
+}
+p{
+    margin: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    .title {
+        color: #26282C;
+
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 26px; /* 144.444% */
+    }
+    .more {
+        color: #34CAA5;
+text-align: center;
+
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px; /* 144.444% */
+        cursor: pointer;
+    }
+}
+.element {
+    display: flex;
+    gap: 10px;
+}
+.invoice {
+  width: 20px;
+}
+.success {
+    color: rgba(52, 202, 165, 1);
+}
+.failed {
+    color: rgba(237, 84, 78, 1);
+}
+.invoice {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+.mat-mdc-table {
+    --mat-table-row-item-outline-width: 0;
+    .mat-mdc-header-cell {
+        color: var(--secondary-color);
+    }
+}
+.mat-elevation-z8 {
+    box-shadow: none !important;
+}

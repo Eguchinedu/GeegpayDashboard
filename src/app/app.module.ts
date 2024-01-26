@@ -14,7 +14,13 @@ import { OrdersComponent } from './pages/orders/orders.component';
 import { DiscountsComponent } from './pages/discounts/discounts.component';
 import { AlertComponent } from './pages/alert/alert.component';
 import { HeaderComponent } from './components/header/header.component';
+import { MatCardModule } from '@angular/material/card';
 import { DatePipe } from '@angular/common';
+import { CardOneComponent } from './pages/dashboard/card-one/card-one.component';
+import { CardTwoComponent } from './pages/dashboard/card-two/card-two.component';
+import { CardThreeComponent } from './pages/dashboard/card-three/card-three.component';
+import { CardFourComponent } from './pages/dashboard/card-four/card-four.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -28,10 +34,16 @@ import { DatePipe } from '@angular/common';
     OrdersComponent,
     DiscountsComponent,
     AlertComponent,
-    HeaderComponent
+    HeaderComponent,
+    CardOneComponent,
+    CardTwoComponent,
+    CardThreeComponent,
+    CardFourComponent
   ],
   imports: [
     BrowserModule,
+    MatCardModule,
+    MatTableModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],

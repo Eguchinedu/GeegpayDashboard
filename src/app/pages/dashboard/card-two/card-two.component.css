@@ -1,0 +1,21 @@
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "a b"
+    "c d";
+}
+.card-two-a{
+    grid-area: a;
+}
+.card-two-b{
+grid-area: b;
+}
+.card-two-c{
+grid-area: c;
+}
+.card-two-d{
+grid-area: d;
+}
