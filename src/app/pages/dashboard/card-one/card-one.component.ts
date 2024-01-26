@@ -49,6 +49,7 @@ export class CardOneComponent implements OnInit {
             borderRadius: 50,
             backgroundColor: color,
             borderColor: border,
+            
           },
         ],
       },

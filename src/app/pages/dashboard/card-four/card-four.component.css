@@ -85,3 +85,17 @@ line-height: 26px; /* 144.444% */
 ::ng-deep .mat-mdc-progress-bar.green .mdc-linear-progress__bar .mdc-linear-progress__bar-inner {
   border-color: green; 
 }
+
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 768px) {
+}
+ @media only screen and (max-width: 480px) {
+
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+ }

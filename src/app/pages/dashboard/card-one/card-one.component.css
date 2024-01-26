@@ -1,3 +1,8 @@
+.container-fluid{
+  width: 700px;
+ overflow-x: scroll !important;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -38,4 +43,9 @@
     }
     
   }
+
+}
+
+#barchart{
+  width: 100%;
 }

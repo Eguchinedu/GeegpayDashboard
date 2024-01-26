@@ -1,33 +1,65 @@
-.container-fluid {  display: grid;
+.container-fluid {
+    width: 100%;
+  display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   grid-template-rows: 1fr 1fr;
   gap: 20px;
-  grid-auto-flow: row;
+  grid-auto-flow: minmax(150px, auto);
   grid-template-areas:
     "one two "
     "three four";
-    .example-card {
-        height: 100%;
-         
-    }
+ 
+}
+
+
+.card-one {
+  grid-area: one;
+  width: 100%;
+   .example-card {
+    height: 100%;
+      min-width: 800px;
+  }
+}
+.card-two {
+  grid-area: two;
+  width: 100%;
+}
+.card-three {
+  grid-area: three;
+  width: 100%;
+   .example-card {
+    height: 100%;
+      min-width: 800px;
+  }
+  
+}
+.card-four {
+  grid-area: four;
+  width: 100%;
   
 }
 
-.card-one{
-    grid-area: one;
+::ng-deep .mat-mdc-card-content {
+  height: 100%;
+  width: 100%;
 }
-.card-two {
-    grid-area: two;
+@media only screen and (max-width: 1200px) {
 }
-.card-three {
-    grid-area: three;
+@media only screen and (max-width: 1024px) {
+  .container-fluid {
+    grid-template-columns:auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four";
+  }
 }
-.card-four {
-    grid-area: four;
+@media only screen and (max-width: 768px) {
+    .card-four, .card-one, .card-two, .card-three{
+        overflow: auto;
+    }
 }
-
-::ng-deep .mat-mdc-card-content{
-
-height: 100%;
-width: 100%;
+@media only screen and (max-width: 480px) {
 }
