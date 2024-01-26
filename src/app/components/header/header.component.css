@@ -1,7 +1,9 @@
 p {
     margin-bottom: 0;
 }
-
+.navbar {
+margin-bottom: 30px;
+}
 .navbar-brand {
     flex: 1;
 }

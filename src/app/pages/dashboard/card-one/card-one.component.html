@@ -1,14 +1,17 @@
 <div class="container-fluid">
   <div class="header">
     <h1 class="title">Sales Trend</h1>
-    <p class="more">
-      sort by:
-      <select>
-        <option value="weekly">Weekly</option>
-        <option value="daily">Daily</option>
-        <option value="monthly">Monthly</option>
+    <div class="select">
+      <p class="more">
+
+        sort by:
+      </p>
+      <select class="dropdown">
+        <option value="weekly" class="item">Weekly</option>
+        <option value="daily" class="item">Daily</option>
+        <option value="monthly" class="item">Monthly</option>
       </select>
-    </p>
+    </div>
   </div>
   <div class="content">
     <canvas id="barchart" width="100%"></canvas>

@@ -1,24 +1,41 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  :is(p) {
+    margin-bottom: 0;
+  }
+  .title {
+    color: #26282c;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 144.444% */
+  }
+
+  .select {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 20px 0;
-    .title {
-        color: #26282C;
-
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: 26px; /* 144.444% */
-    }
+    justify-content: space-between;
+    gap: 5px;
     .more {
+      color: #3a3f51;
 
-text-align: center;
-
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: 26px; /* 144.444% */
-        cursor: pointer;
+      /* Body Text/Plus Jakarta Sans/Medium/14 */
+      font-family: "Plus Jakarta Sans";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 22px; /* 157.143% */
     }
+    .dropdown {
+      border-radius: 30px;
+      padding: 6px 10px;
+      border-color: #E1DFDF;
+   
+    }
+    
+  }
 }

@@ -6,13 +6,15 @@
   grid-template-areas:
     "one two "
     "three four";
-     .example-card {
+    .example-card {
         height: 100%;
+         
     }
+  
 }
+
 .card-one{
     grid-area: one;
-   
 }
 .card-two {
     grid-area: two;
@@ -22,4 +24,10 @@
 }
 .card-four {
     grid-area: four;
+}
+
+::ng-deep .mat-mdc-card-content{
+
+height: 100%;
+width: 100%;
 }
