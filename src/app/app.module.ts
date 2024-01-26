@@ -22,6 +22,7 @@ import { CardThreeComponent } from './pages/dashboard/card-three/card-three.comp
 import { CardFourComponent } from './pages/dashboard/card-four/card-four.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     CardOneComponent,
     CardTwoComponent,
     CardThreeComponent,
-    CardFourComponent
+    CardFourComponent,
+    ComingSoonComponent
   ],
   imports: [
     BrowserModule,
