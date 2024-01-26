@@ -1,0 +1,88 @@
+{
+    "chartdata": [
+    {
+        "month": "Jan",
+        "amount": 6000,
+        "color": "rgba(52, 202, 165, 0.1)",
+        "borderColor": "rgba(52, 202, 165, 0.1)"
+        
+    },
+    {
+        "month": "Feb",
+        "amount": 20000,
+        "color": "rgba(52, 202, 165, 0.1)",
+        "borderColor": "rgba(52, 202, 165, 0.1)"
+        
+    },
+    {
+        "month": "Mar",
+        "amount": 3000,
+        "color": "rgba(52, 202, 165, 0.1)",
+        "borderColor": "rgba(52, 202, 165, 0.1)"
+        
+    },
+    {
+        "month": "Apr",
+        "amount": 25000,
+        "color": "rgba(52, 202, 165, 0.1)",
+        "borderColor": "rgba(52, 202, 165, 0.1)"
+        
+    },
+    {
+        "month": "May",
+        "amount": 8000,
+        "color": "rgba(52, 202, 165, 0.1)",
+        "borderColor": "rgba(52, 202, 165, 0.1)"
+        
+    },
+    {
+        "month": "Jun",
+        "amount": 45000,
+        "color": "rgba(52, 202, 165, 1), rgba(52, 202, 165, 0)",
+        "borderColor": "rgba(52, 202, 165, 1), rgba(52, 202, 165, 0)"
+        
+    },
+    {
+        "month": "Jul",
+        "amount": 8000,
+        "color": "rgba(52, 202, 165, 0.1)",
+        "borderColor": "rgba(52, 202, 165, 0.1)"
+        
+    },
+    {
+        "month": "Aug",
+        "amount": 22000,
+        "color": "rgba(52, 202, 165, 0.1)",
+        "borderColor": "rgba(52, 202, 165, 0.1)"
+        
+    },
+    {
+        "month": "Sep",
+        "amount": 35000,
+        "color": "rgba(52, 202, 165, 0.1)",
+        "borderColor": "rgba(52, 202, 165, 0.1)"
+        
+    },
+    {
+        "month": "Oct",
+        "amount": 4000,
+        "color": "rgba(52, 202, 165, 0.1)",
+        "borderColor": "rgba(52, 202, 165, 0.1)"
+        
+    },
+    {
+        "month": "Nov",
+        "amount": 30000,
+        "color": "rgba(52, 202, 165, 0.1)",
+        "borderColor": "rgba(52, 202, 165, 0.1)"
+        
+    },
+    {
+        "month": "Dec",
+        "amount": 25000,
+        "color": "rgba(52, 202, 165, 0.1)",
+        "borderColor": "rgba(52, 202, 165, 0.1)"
+        
+    }
+    ]
+}

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -23,6 +23,7 @@ import { CardFourComponent } from './pages/dashboard/card-four/card-four.compone
 import { MatTableModule } from '@angular/material/table';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,9 @@ import { ComingSoonComponent } from './components/coming-soon/coming-soon.compon
   imports: [
     BrowserModule,
     MatCardModule,
+    HttpClientModule,
     MatTableModule,
+    NgChartsModule,
     MatProgressBarModule,
     AppRoutingModule,
     BrowserAnimationsModule
