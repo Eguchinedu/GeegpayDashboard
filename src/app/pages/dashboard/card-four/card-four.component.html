@@ -1,1 +1,20 @@
-<p>card-four works!</p>
+<div class="container-fluid">
+  <div class="header">
+    <h1 class="title">Top Platform</h1>
+    <p class="more">See All</p>
+  </div>
+  <div class="content">
+    <div class="progress-content" *ngFor="let plat of topPlatforms">
+
+        <div class="card-progress">
+         <h3>{{plat.name}} </h3>
+         <mat-progress-bar mode="determinate" [value]="plat.progress"  [class]="getColorClass(plat.progress)"></mat-progress-bar>
+         <div class="price">
+             <p class="amount">{{plat.amount}}</p>
+             <p class="percent">+{{plat.percent}}%</p>
+         </div>
+        </div>
+    </div>
+  </div>
+</div>
+

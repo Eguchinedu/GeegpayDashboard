@@ -21,6 +21,7 @@ import { CardTwoComponent } from './pages/dashboard/card-two/card-two.component'
 import { CardThreeComponent } from './pages/dashboard/card-three/card-three.component';
 import { CardFourComponent } from './pages/dashboard/card-four/card-four.component';
 import { MatTableModule } from '@angular/material/table';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { MatTableModule } from '@angular/material/table';
     BrowserModule,
     MatCardModule,
     MatTableModule,
+    MatProgressBarModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],

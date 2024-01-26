@@ -1,0 +1,87 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    .title {
+        color: #26282C;
+
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 26px; /* 144.444% */
+    }
+    .more {
+        color: #34CAA5;
+text-align: center;
+
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px; /* 144.444% */
+        cursor: pointer;
+    }
+}
+.content {
+    height: 330px;
+    overflow-y: scroll !important ;
+    
+}
+.content::-webkit-scrollbar{
+    display: none;
+}
+p, h3 {
+    margin-bottom: 0;
+}
+.card-progress {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 10px;
+    h3 {
+        color: var(--Black, #22242C);
+
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 26px; /* 144.444% */
+    }
+    .price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .amount, .percent {
+            color: var(--Neutral-600, #525252);
+    
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 144.444% */
+        }
+    }
+}
+
+::ng-deep .mat-mdc-progress-bar {
+    border-radius: 30px;
+    
+}
+
+
+::ng-deep .mat-mdc-progress-bar.red .mdc-linear-progress__bar .mdc-linear-progress__bar-inner{
+  border-color: #FFB74A; 
+ 
+
+}
+
+::ng-deep .mat-mdc-progress-bar.orange .mdc-linear-progress__bar .mdc-linear-progress__bar-inner {
+  border-color: #54C5EB; 
+}
+
+::ng-deep .mat-mdc-progress-bar.yellow .mdc-linear-progress__bar .mdc-linear-progress__bar-inner {
+  border-color: #6160DC; 
+}
+
+::ng-deep .mat-mdc-progress-bar.green .mdc-linear-progress__bar .mdc-linear-progress__bar-inner {
+  border-color: green; 
+}
