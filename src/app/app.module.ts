@@ -13,6 +13,8 @@ import { UsersComponent } from './pages/users/users.component';
 import { OrdersComponent } from './pages/orders/orders.component';
 import { DiscountsComponent } from './pages/discounts/discounts.component';
 import { AlertComponent } from './pages/alert/alert.component';
+import { HeaderComponent } from './components/header/header.component';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -25,14 +27,15 @@ import { AlertComponent } from './pages/alert/alert.component';
     UsersComponent,
     OrdersComponent,
     DiscountsComponent,
-    AlertComponent
+    AlertComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
