@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     :is(h1){
 font-size: 40px;
 font-style: normal;
@@ -14,4 +15,35 @@ font-size: 25px;
 font-style: normal;
 line-height: 32px; /* 133.333% */
     }
+    .upcoming-img {
+        
+        :is(img) {
+            width: 100%;
+        }
+    }
 }
+
+
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 768px) {
+    .upcoming-content {
+
+    :is(h1){
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 32px; /* 133.333% */
+    }
+    :is(p){
+font-size: 15px;
+font-style: normal;
+line-height: 32px; /* 133.333% */
+    }
+
+}
+}
+ @media only screen and (max-width: 480px) {
+ }

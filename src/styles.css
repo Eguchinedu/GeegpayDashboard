@@ -9,6 +9,6 @@ body {
   position: relative;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-/* *::-webkit-scrollbar{
+*::-webkit-scrollbar{
     display: none;
-} */
+}

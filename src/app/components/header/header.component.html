@@ -9,9 +9,14 @@
       aria-controls="navbarTogglerDemo02"
       aria-expanded="false"
       aria-label="Toggle navigation"
+      (click)="changeBtnState()"
     >
-      <span class="navbar-toggler-icon"></span>
+      <span >
+        <i [class]="changeBtn ? 'bi bi-x' : 'bi bi-list'"></i
+            >
+      </span>
     </button>
+    
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <form class="d-flex" role="search">
         <button class="btn-search" type="submit">

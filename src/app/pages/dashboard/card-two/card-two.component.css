@@ -78,7 +78,7 @@ line-height: 32px; /* 133.333% */
     align-items: center;
     border-radius: 30px;
     padding: 2px 3px;
-    p {
+    :is(p) {
       font-size: 12px;
 font-style: normal;
 font-weight: 500;
@@ -94,7 +94,7 @@ line-height: 16px; /* 133.333% */
     color: rgba(52, 202, 165, 1);
   }
   .stat-duration {
-    p {
+   :is(p){
       color: #606060;
 font-size: 14px;
 font-style: normal;

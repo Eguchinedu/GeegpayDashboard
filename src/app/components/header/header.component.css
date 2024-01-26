@@ -7,6 +7,13 @@ margin-bottom: 30px;
 .navbar-brand {
     flex: 1;
 }
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
 .navbar-collapse {
     justify-content: flex-end;
     gap: 30px;
@@ -19,7 +26,7 @@ margin-bottom: 30px;
     width: 350px;
     padding: 7px;
     display: flex;
-    justify-content: space-between;
+   
     align-items: center;
     
 
@@ -93,6 +100,8 @@ box-shadow: none;
 @media only screen and (max-width: 768px) {
     .navbar-collapse{
         justify-content: center !important;
+        border-bottom: 1px solid #78828A;
+        padding: 8px 0;
     }
     .d-flex{
         width: 300px;
@@ -100,4 +109,10 @@ box-shadow: none;
     }
 }
  @media only screen and (max-width: 480px) {
+    .d-flex{
+        width: 200px;
+        margin: 10px auto;
+        padding: 4px;
+    }
+
  }

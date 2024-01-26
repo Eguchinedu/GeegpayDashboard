@@ -38,7 +38,7 @@ p, h3 {
     flex-direction: column;
     gap: 15px;
     margin-bottom: 10px;
-    h3 {
+    :is(h3) {
         color: var(--Black, #22242C);
 
 font-size: 18px;

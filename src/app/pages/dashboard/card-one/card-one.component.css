@@ -1,4 +1,5 @@
 .container-fluid{
+  width: 100%;
   width: 700px;
  overflow-x: scroll !important;
 }
@@ -46,6 +47,4 @@
 
 }
 
-#barchart{
-  width: 100%;
-}
+
