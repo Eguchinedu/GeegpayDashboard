@@ -96,3 +96,72 @@ font-weight: 900;
         }
     }
 }
+input, label {
+    margin-left: 4.5px;
+}
+
+label{
+    width: 30px;
+    height: 70px;
+    display: block;
+    position: relative;
+    background-color: #ebebeb;
+    border-radius: 30px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: .3s;
+}
+label::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    background:  #34CAA5;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: .3s;
+
+}
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+input:checked + label {
+    background: #242424;
+}
+
+input:checked + label:after {
+    top: 70px;
+    transform: translateY(-100%);
+    background: linear-gradient(180deg, #777, #3a3a3a);
+}
+label:active:after {
+    height: 35px;
+}
+input:checked + label + .sidenav{
+    color: red;
+}
+
+    label svg{
+        position: absolute;
+        width: 30px;
+        top: 3px;
+        z-index: 100;
+    }
+    label svg.sun{
+        top: 2.5px;
+        fill: #fff;
+        transition: .3s;
+    }
+    label svg.moon {
+        top: 45px;
+        fill: #777;
+        transition: .3s;
+    }
+
+    input:checked + label svg.moon {
+        fill: #fff;
+    }
