@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" [ngClass]="{ 'dark-mode': darkModeService.darkMode$ | async}">
   <div class="header">
     <h1 class="title">Last Orders</h1>
     <p class="more">See All</p>

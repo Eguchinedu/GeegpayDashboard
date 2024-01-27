@@ -51,6 +51,7 @@ line-height: 26px; /* 144.444% */
 .mat-mdc-table {
     --mat-table-row-item-outline-width: 0;
 max-width: 100%;
+background-color: transparent !important;
   white-space: nowrap;
     .mat-mdc-header-cell {
         color: var(--secondary-color);
@@ -61,17 +62,18 @@ max-width: 100%;
   overflow-x: auto !important;
 
 }
-/* 
-.mat-column-name {
-  flex: 1;
+.dark-mode{
+  .header{
+    .title{
+      color: var(--text-theme);
+    }
+  }
+  .mat-mdc-table {
+    .mat-mdc-header-cell {
+        color: var(--text-theme-light);
+    }
+    .mat-mdc-cell {
+        color: var(--text-theme);
+    }
 }
-
-.mat-column-amount,
-.mat-column-date,
-.mat-column-status {
-  flex: 0 0 18%;
 }
-
-.mat-column-invoice {
-  flex: 0 0 15%; 
-} */

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DarkModeService } from 'src/app/service/dark-mode.service';
 
 export interface PeriodicElement {
   name: string;
@@ -54,4 +55,5 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class CardThreeComponent {
   displayedColumns: string[] = ['name', 'date', 'amount', 'status', 'invoice'];
   dataSource = ELEMENT_DATA;
+  constructor(public darkModeService: DarkModeService) {}
 }
