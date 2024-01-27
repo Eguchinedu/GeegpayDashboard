@@ -1,11 +1,15 @@
-<mat-card class="example-card">
-  <mat-card-content>
-    <div class="upcoming-content">
-        <div class="upcoming-img">
-            <img src="../../../assets/images/under-construction.png" alt="">
-        </div>
-        <h1>Under Construction!</h1>
-        <p>More Features to come, Please check back!</p>
-    </div>
-  </mat-card-content>
-</mat-card>
+
+<div class="container-fluid" [ngClass]="{ 'dark-mode': darkModeService.darkMode$ | async}">
+
+  <mat-card class="example-card" >
+    <mat-card-content>
+      <div class="upcoming-content">
+          <div class="upcoming-img">
+              <img src="../../../assets/images/under-construction.png" alt="">
+          </div>
+          <h1>Under Construction!</h1>
+          <p>More Features to come, Please check back!</p>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
