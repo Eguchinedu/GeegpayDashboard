@@ -1,4 +1,4 @@
-.container-fluid {  
+.container-fluid {
   display: grid;
   padding: 0;
   height: 100%;
@@ -8,131 +8,145 @@
   grid-auto-flow: row;
   grid-template-areas:
     "a b"
-    
     "c d";
 }
 p {
   margin-bottom: 0;
 }
- .example-card {
-      height: 100%;
-       border-radius: 14px;
-  border: 1px solid #EDF2F7;
+.example-card {
+  height: 100%;
+  border-radius: 14px;
+  border: 1px solid #edf2f7;
 
-background: #FFF;
-box-shadow: none;
-    }
-.card-two-a{
-    grid-area: a;
-   
+  background: #fff;
+  box-shadow: none;
 }
-.card-two-b{
-grid-area: b;
+.card-two-a {
+  grid-area: a;
 }
-.card-two-c{
-grid-area: c;
+.card-two-b {
+  grid-area: b;
 }
-.card-two-d{
-grid-area: d;
+.card-two-c {
+  grid-area: c;
+}
+.card-two-d {
+  grid-area: d;
 }
 
 .stats-card {
   display: flex;
   flex-direction: column;
   gap: 15px;
-.section-one {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  .icon {
-    height: 40px;
-    width: 40px;
-    border: 1px solid rgba(230, 230, 230, 1);
-    border-radius: 50%;
+  .section-one {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
-  }
-}
-.order {
-  display: flex;
-  flex-direction: column;
-
-  .title {
-    color: #898989;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: 26px; /* 144.444% */
-  }
-  .number {
-    color: #3A3F51;
-
-font-size: 24px;
-font-style: normal;
-font-weight: 600;
-line-height: 32px; /* 133.333% */
-  }
-}
-
-.statistics {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  .stat-icon {
-    display: flex;
-    align-items: center;
-    border-radius: 30px;
-    padding: 2px 3px;
-    :is(p) {
-      font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: 16px; /* 133.333% */
+    gap: 20px;
+    .icon {
+      height: 40px;
+      width: 40px;
+      border: 1px solid rgba(230, 230, 230, 1);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
     }
   }
-  .neg {
-    background-color: rgb(248, 212, 210);
-    color: rgba(237, 84, 78, 1);
-  }
-  .poz {
-    background-color: rgb(194, 247, 234);
-    color: rgba(52, 202, 165, 1);
-  }
-  .stat-duration {
-   :is(p){
-      color: #606060;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  .order {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      color: #898989;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 26px; /* 144.444% */
+    }
+    .number {
+      color: #3a3f51;
+
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32px; /* 133.333% */
     }
   }
-}
+
+  .statistics {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    .stat-icon {
+      display: flex;
+      align-items: center;
+      border-radius: 30px;
+      padding: 2px 3px;
+      :is(p) {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px; /* 133.333% */
+      }
+    }
+    .neg {
+      background-color: rgb(248, 212, 210);
+      color: rgba(237, 84, 78, 1);
+    }
+    .poz {
+      background-color: rgb(194, 247, 234);
+      color: rgba(52, 202, 165, 1);
+    }
+    .stat-duration {
+      :is(p) {
+        color: #606060;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
 }
 ::ng-deep .mat-mdc-card-content {
   height: 100%;
   width: 100%;
 }
-
+.dark-mode {
+  .stats-card {
+    .title {
+      color: var(--text-theme-light);
+    }
+    .number {
+      color: var(--text-theme);
+    }
+    .statistics {
+      .stat-duration {
+        :is(p) {
+          color: var(--text-theme-light);
+        }
+      }
+    }
+  }
+}
 
 @media only screen and (max-width: 1200px) {
 }
 @media only screen and (max-width: 1024px) {
 }
 @media only screen and (max-width: 768px) {
-     .container-fluid { 
-  grid-template-columns: 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr; 
-  
-  grid-template-areas: 
-    "a"
-    "b"
-    "c"
-    "d";
-    }
+  .container-fluid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d";
+  }
 }
- @media only screen and (max-width: 480px) {
- }
+@media only screen and (max-width: 480px) {
+}

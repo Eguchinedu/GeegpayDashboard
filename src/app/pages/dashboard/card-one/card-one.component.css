@@ -60,6 +60,9 @@
       }
       .dropdown{
         color: var(--text-theme);
+        .item {
+          color: #000;
+        }
       }
     }
   }
