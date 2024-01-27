@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { DarkModeService } from 'src/app/service/dark-mode.service';
 
 @Component({
   selector: 'app-body',
@@ -9,6 +10,8 @@ export class BodyComponent {
 
   @Input() collapsed = false;
   @Input() screenWidth = 0;
+
+  constructor( public darkModeService: DarkModeService){}
 
   getBodyClass():string{
 
