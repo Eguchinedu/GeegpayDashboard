@@ -10,4 +10,5 @@ https://geegpay-dashboard.web.app
 -Bootstrap
 -Angular materials
 -Boxicons
+-Firebase
 

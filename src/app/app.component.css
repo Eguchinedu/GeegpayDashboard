@@ -1,6 +1,8 @@
 :host {
   --bg-main: rgba(250, 250, 250, 1);
-  --bg-dark: #242424;
+  --bg-dark: #1e1e1e;
+  --bg-card: #2a2d2e;
+  --dark-border: rgb(72, 72, 72); 
   --bg-nav: linear-gradient(0deg, #ebecf2, #ebecf2),
     linear-gradient(0deg, #f7f8fa, #f7f8fa);
     --bg-secondary: #fff;

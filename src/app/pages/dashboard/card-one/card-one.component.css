@@ -60,6 +60,7 @@
       }
       .dropdown{
         color: var(--text-theme);
+        border-color: var(--dark-border);
         .item {
           color: #000;
         }

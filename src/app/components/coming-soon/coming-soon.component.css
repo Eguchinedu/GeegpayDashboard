@@ -26,7 +26,7 @@
 }
 .dark-mode {
   .example-card {
-    background: var(--bg-dark);
+    background: var(--bg-card);
     border: none;
   }
   .upcoming-content {

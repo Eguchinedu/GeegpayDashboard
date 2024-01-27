@@ -167,7 +167,7 @@ input:checked + label svg.moon {
 }
 
 .dark-mode {
-  background: var(--bg-dark);
+  background: var(--bg-card);
   .logo-container{
       .logo-text {
          color: var(--text-theme);

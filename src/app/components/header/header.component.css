@@ -100,11 +100,10 @@ box-shadow: none;
 
 .dark-mode {
   
-  background-color: var(--bg-dark);
+  background-color: var(--bg-card);
   color: #fff;
-  .navbar {
-border-bottom: 1px solid rgb(242, 244, 245);
-}
+  border-bottom: 1px solid rgb(72, 72, 72);
+
   .navbar-brand {
     color: #fff;
   }
@@ -114,6 +113,26 @@ border-bottom: 1px solid rgb(242, 244, 245);
    .form-control::placeholder{
     color: #fff;
    }
+   .d-flex {
+    border-color: var(--dark-border);
+   }
+   .navbar-nav {
+ 
+    .notify{
+          border-color: var(--dark-border);
+
+
+     
+    }
+    .profile {
+   
+         border-color: var(--dark-border);
+
+   
+
+    }
+}
+
 }
 
 @media only screen and (max-width: 1200px) {

@@ -1,3 +1,3 @@
-<div class="body" [ngClass]="getBodyClass()" [ngClass]="{ 'dark-mode': darkModeService.darkMode$ | async}">
+<div class="body" [ngClass]="[getBodyClass(), (darkModeService.darkMode$ | async) ? 'dark-mode' : '']">
 <router-outlet></router-outlet>
 </div>
