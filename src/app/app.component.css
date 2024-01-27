@@ -1,9 +1,12 @@
 :host {
   --bg-main: rgba(250, 250, 250, 1);
+  --bg-dark: #242424;
   --bg-nav: linear-gradient(0deg, #ebecf2, #ebecf2),
     linear-gradient(0deg, #f7f8fa, #f7f8fa);
     --bg-secondary: #fff;
   --primary-color: rgba(38, 40, 44, 1);
   --secondary-color: rgba(82, 82, 82, 1);
+--text-theme: #ffffff;
+--text-theme-light: #a2a0a0;
 }
 

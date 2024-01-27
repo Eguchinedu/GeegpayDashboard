@@ -1,4 +1,4 @@
-<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+<nav class="navbar sticky-top navbar-expand-lg" [ngClass]="{ 'dark-mode': darkModeService.darkMode$ | async}">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">{{header}}</a>
     <button

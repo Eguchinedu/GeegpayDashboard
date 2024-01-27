@@ -1,5 +1,6 @@
 import { Component, EventEmitter, HostListener, OnInit, Output } from '@angular/core';
 import { navbarData } from './nav-data';
+import { DarkModeService } from 'src/app/service/dark-mode.service';
 
 interface SideNavToggle {
   screenWidth: number;
@@ -18,7 +19,11 @@ export class SideNavComponent implements OnInit {
   navData = navbarData;
   isActive: boolean = false;
 
-  
+  constructor(public darkModeService: DarkModeService) {}
+
+  toggleDarkMode() {
+    this.darkModeService.toggleDarkMode();
+  }
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {

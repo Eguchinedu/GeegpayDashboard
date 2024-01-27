@@ -1,4 +1,4 @@
-<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed' : ''">
+<div class="sidenav" [ngClass]="{'sidenav-collapsed': collapsed, 'dark-mode': darkModeService.darkMode$ | async}">
   <div class="logo-container">
     <button class="logo" (click)="toggleCollapse()">
       <img src="../../../assets/images/Logo.png" />
@@ -28,7 +28,7 @@
       <li class="sidenav-nav-item">
         <a href="
         " class="sidenav-nav-link">
-        <input type="checkbox" id="Darkmode-toggle">
+        <input type="checkbox" id="Darkmode-toggle"  (change)="toggleDarkMode()">
         <label for="Darkmode-toggle">
           <!-- <i class='bx bxs-sun'></i>
           <i class='bx bxs-moon' ></i> -->

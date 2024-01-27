@@ -1,5 +1,6 @@
 import { DatePipe } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
+import { DarkModeService } from 'src/app/service/dark-mode.service';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,10 @@ export class HeaderComponent {
   currentDate: string | null;
   changeBtn: boolean = false;
 
-  constructor(private datePipe: DatePipe) {
+  constructor(
+    private datePipe: DatePipe,
+    public darkModeService: DarkModeService
+  ) {
     this.currentDate = this.datePipe.transform(new Date(), 'MMMM d, yyyy');
   }
   changeBtnState() {
