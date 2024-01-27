@@ -49,5 +49,20 @@
   }
 
 }
+.dark-mode{
+  .header{
+    .title{
+      color: var(--text-theme);
+    }
+    .select{
+      .more{
+        color: var(--text-theme);
+      }
+      .dropdown{
+        color: var(--text-theme);
+      }
+    }
+  }
+}
 
 

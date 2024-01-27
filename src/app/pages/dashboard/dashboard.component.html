@@ -1,5 +1,5 @@
 <app-header header="Dashboard"></app-header>
-<div class="container-fluid">
+<div class="container-fluid" [ngClass]="{ 'dark-mode': darkModeService.darkMode$ | async}">
     <div class="card-one">
 <mat-card class="example-card">
   <mat-card-content>

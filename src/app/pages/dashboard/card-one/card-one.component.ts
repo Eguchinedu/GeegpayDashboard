@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart, registerables } from 'chart.js';
+import { DarkModeService } from 'src/app/service/dark-mode.service';
 import { ServiceService } from 'src/app/service/service.service';
 Chart.register(...registerables);
 
@@ -90,19 +91,20 @@ export class CardOneComponent implements OnInit {
   datacolor: any[] = [];
   databorder: any[] = [];
 
-  constructor(private _barService: ServiceService) {}
+  constructor(
+    private _barService: ServiceService,
+    public darkModeService: DarkModeService
+  ) {}
   ngOnInit(): void {
-
-     for (let i = 0; i < chartData.length; i++) {
-       this.datamonth.push(chartData[i].month);
-       this.dataamount.push(chartData[i].amount);
-       this.datacolor.push(chartData[i].color);
-       this.databorder.push(chartData[i].borderColor);
-     }
+    for (let i = 0; i < chartData.length; i++) {
+      this.datamonth.push(chartData[i].month);
+      this.dataamount.push(chartData[i].amount);
+      this.datacolor.push(chartData[i].color);
+      this.databorder.push(chartData[i].borderColor);
+    }
     // this._barService.showData().subscribe((data) => {
     //   this.data = data;
     //   console.log(data);
-      
 
     //   if (this.data != null) {
     //     for (let i = 0; i < this.data.length; i++) {
@@ -133,15 +135,14 @@ export class CardOneComponent implements OnInit {
             borderRadius: 50,
             backgroundColor: color,
             borderColor: border,
-            
           },
         ],
       },
       options: {
         plugins: {
-           legend: {
-                display: false,
-            },
+          legend: {
+            display: false,
+          },
           tooltip: {
             yAlign: 'bottom',
           },
@@ -149,7 +150,6 @@ export class CardOneComponent implements OnInit {
         scales: {
           y: {
             beginAtZero: true,
-            
           },
         },
       },
