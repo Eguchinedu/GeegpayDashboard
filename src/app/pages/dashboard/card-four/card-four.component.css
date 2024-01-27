@@ -86,6 +86,27 @@ line-height: 26px; /* 144.444% */
   border-color: green; 
 }
 
+.dark-mode{
+  .header{
+    .title{
+      color: var(--text-theme);
+    }
+  }
+  .card-progress {
+
+    :is(h3) {
+        color: var(--text-theme);
+    }
+    .price {
+
+        .amount, .percent {
+            color: var(--text-theme);
+        }
+    }
+}
+
+}
+
 @media only screen and (max-width: 1200px) {
 }
 @media only screen and (max-width: 1024px) {

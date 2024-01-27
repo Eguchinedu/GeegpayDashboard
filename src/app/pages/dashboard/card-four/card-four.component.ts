@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DarkModeService } from 'src/app/service/dark-mode.service';
 
 export interface Platform {
   name: string;
@@ -13,6 +14,7 @@ export interface Platform {
   styleUrls: ['./card-four.component.css'],
 })
 export class CardFourComponent {
+  constructor(public darkModeService: DarkModeService) {}
   topPlatforms: Platform[] = [
     {
       name: 'Book Bazaar',
