@@ -25,6 +25,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 import { NgChartsModule } from 'ng2-charts';
 import { FormsModule } from '@angular/forms';
+import { InvoiceReceiptComponent } from './pages/dashboard/card-three/invoice-receipt/invoice-receipt.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -43,12 +45,14 @@ import { FormsModule } from '@angular/forms';
     CardTwoComponent,
     CardThreeComponent,
     CardFourComponent,
-    ComingSoonComponent
+    ComingSoonComponent,
+    InvoiceReceiptComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     MatCardModule,
+    MatDialogModule,
     HttpClientModule,
     MatTableModule,
     NgChartsModule,

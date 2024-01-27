@@ -115,6 +115,9 @@ p {
   width: 100%;
 }
 .dark-mode {
+    .example-card {
+    background: var(--bg-dark);
+  }
   .stats-card {
     .title {
       color: var(--text-theme-light);

@@ -41,7 +41,7 @@
       </ng-container>
       <ng-container matColumnDef="invoice">
         <th mat-header-cell *matHeaderCellDef>Invoice</th>
-        <td mat-cell *matCellDef="let element"  class="invoice">
+        <td mat-cell *matCellDef="let element"  class="invoice" (click)="openDialog()">
           <i class="bi bi-file-earmark-arrow-down"></i>
           <p>View</p>
         </td>

@@ -1,0 +1,57 @@
+<div
+  class="container-fluid"
+  [ngClass]="{ 'dark-mode': darkModeService.darkMode$ | async }"
+>
+<div class="header">
+    <h2>Order Reciept</h2>
+    <p>Order: #023456</p>
+</div>
+<div class="receipt-content">
+    <div class="order-details">
+      <h3>Items</h3>
+      <div class="order-item">
+        <p>Nike Hybrid T shirt</p>
+        <div class="order-amount">
+          <p>x 2</p>
+          <p>{{ 2000 | currency }}</p>
+        </div>
+      </div>
+      <div class="order-item">
+        <p>Nike Hybrid T shirt</p>
+        <div class="order-amount">
+          <p>x 1</p>
+          <p>{{ 900 | currency }}</p>
+        </div>
+      </div>
+      <div class="order-item">
+        <p>Nike Hybrid T shirt</p>
+        <div class="order-amount">
+          <p>x 2</p>
+          <p>{{ 875 | currency }}</p>
+        </div>
+      </div>
+      <div class="order-item">
+        <p>Nike Hybrid T shirt</p>
+        <div class="order-amount">
+          <p>x 4</p>
+          <p>{{ 4999 | currency }}</p>
+        </div>
+      </div>
+      <div class="order-total">
+        <p>Total</p>
+        <p>{{ 8592 | currency }}</p>
+      </div>
+    </div>
+
+    <div class="information">
+      <div class="card-info">
+        <p>Card</p>
+        <p>xxxx xxxx xxxx xxxx Visa</p>
+      </div>
+      <div class="address">
+        <p>Address</p>
+        <p>524 Boulevard, London.</p>
+      </div>
+    </div>
+  </div>
+</div>

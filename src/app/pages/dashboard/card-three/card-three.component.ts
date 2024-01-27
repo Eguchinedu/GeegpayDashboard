@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { DarkModeService } from 'src/app/service/dark-mode.service';
+import { InvoiceReceiptComponent } from './invoice-receipt/invoice-receipt.component';
 
 export interface PeriodicElement {
   name: string;
@@ -55,5 +57,16 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class CardThreeComponent {
   displayedColumns: string[] = ['name', 'date', 'amount', 'status', 'invoice'];
   dataSource = ELEMENT_DATA;
-  constructor(public darkModeService: DarkModeService) {}
+  constructor(
+    public darkModeService: DarkModeService,
+    public dialog: MatDialog
+  ) {}
+
+  openDialog() {
+    const dialogRef = this.dialog.open(InvoiceReceiptComponent);
+
+    dialogRef.afterClosed().subscribe((result) => {
+      result
+    });
+  }
 }
