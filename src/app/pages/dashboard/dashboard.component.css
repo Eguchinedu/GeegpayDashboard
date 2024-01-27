@@ -4,12 +4,20 @@
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   grid-template-rows: 1fr 1fr;
+  justify-content: center;
   gap: 20px;
-  grid-auto-flow: minmax(150px, auto);
+  grid-auto-flow: row;
   grid-template-areas:
     "one two "
     "three four";
  
+}
+.example-card{
+  border-radius: 14px;
+  border: 1px solid #EDF2F7;
+
+background: #FFF;
+box-shadow: none;
 }
 
 
@@ -43,6 +51,7 @@
 ::ng-deep .mat-mdc-card-content {
   height: 100%;
   width: 100%;
+  
 }
 @media only screen and (max-width: 1200px) {
 }

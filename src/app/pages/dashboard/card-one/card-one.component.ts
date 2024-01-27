@@ -37,8 +37,8 @@ const chartData = [
   {
     month: 'Jun',
     amount: 45000,
-    color: 'rgba(52, 202, 165, 1), rgba(52, 202, 165, 0)',
-    borderColor: 'rgba(52, 202, 165, 1), rgba(52, 202, 165, 0)',
+    color: 'rgba(52, 202, 165, 1)',
+    borderColor: 'rgba(52, 202, 165, 1)',
   },
   {
     month: 'Jul',

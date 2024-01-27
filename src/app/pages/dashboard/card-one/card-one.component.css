@@ -36,10 +36,13 @@
       font-weight: 500;
       line-height: 22px; /* 157.143% */
     }
+    :is(select) {
+      background-color: transparent !important;
+    }
     .dropdown {
       border-radius: 30px;
       padding: 6px 10px;
-      border-color: #E1DFDF;
+      border: 1px solid #E1DFDF;
    
     }
     

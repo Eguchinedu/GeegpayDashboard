@@ -4,7 +4,7 @@
   height: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 20px;
+  gap: 10px;
   grid-auto-flow: row;
   grid-template-areas:
     "a b"
@@ -14,9 +14,17 @@
 p {
   margin-bottom: 0;
 }
+ .example-card {
+      height: 100%;
+       border-radius: 14px;
+  border: 1px solid #EDF2F7;
+
+background: #FFF;
+box-shadow: none;
+    }
 .card-two-a{
     grid-area: a;
-    
+   
 }
 .card-two-b{
 grid-area: b;
@@ -103,6 +111,10 @@ line-height: normal;
     }
   }
 }
+}
+::ng-deep .mat-mdc-card-content {
+  height: 100%;
+  width: 100%;
 }
 
 
